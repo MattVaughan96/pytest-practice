@@ -7,3 +7,6 @@ def check_status_code_equals_200():
     auth = HTTPBasicAuth(username,apiKey)
     response = requests.get(url,headers=headers,auth=auth,verify = "",proxies = proxyDict)
     assert response.status_code == 200
+
+#mucking around
+#more mucking
