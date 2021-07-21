@@ -1,6 +1,7 @@
 import pytest
 import requests
 import artifactory
+
 def check_status_code_equals_200():
     url = "https://binarycentral.jfrog.io/artifactory/docker-hub/library"
     auth = HTTPBasicAuth(username,apiKey)
