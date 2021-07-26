@@ -11,5 +11,5 @@ def count_vowels(string):
 
 print(count_vowels("Matt"))
 
-def check_vowel_count():
-    assert count_vowels("Matt") == 2
+def test_vowel_count():
+    assert count_vowels("Matt") == 1

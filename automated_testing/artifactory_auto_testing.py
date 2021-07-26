@@ -8,13 +8,13 @@ def func(x):
 def test_answer():
     assert func(3) == 5
 
-def check_status_code_equals_200():
+def test_status_code_equals_200():
     url = "https://binarycentral.jfrog.io/artifactory/docker-hub/library"
     auth = HTTPBasicAuth(username,apiKey)
     response = requests.get(url,headers=headers,auth=auth,verify = "",proxies = proxyDict)
     assert response.status_code == 200
 
-def Check_package_download():
+def test_package_download():
     url = "https://binarycentral.jfrog.io/artifactory/docker-hub/library"
     auth = HTTPBasicAuth(username,apiKey)
     response = requests.get(url,headers=headers,auth=auth,verify = "",proxies = proxyDict)
