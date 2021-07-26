@@ -17,4 +17,4 @@ def Check_package_download():
     #code that pip installs docker package
     
     #code to check installed successfully
-https://github.com/devopshq/artifactory
+
