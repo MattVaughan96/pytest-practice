@@ -22,7 +22,3 @@ def test_package_download():
     #code that pip installs docker package
     
     #code to check installed successfully
-<<<<<<< HEAD:automated_testing/artifactory_auto_testing.py
-
-=======
->>>>>>> 106f70a13489a9e7d6a6c3c3f362560cc2d181b6:automated testing/artifactory_auto_testing.py
