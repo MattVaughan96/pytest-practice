@@ -1,24 +1,27 @@
 import pytest
 import requests
-import artifactory
+from artifactory import ArtifactoryPath
 
-def func(x):
-    return x+1
+USERNAME = "name"
+PASSWORD = "password"
 
-def test_answer():
-    assert func(3) == 5
+
+path = ArtifactoryPath(
+    "https://binarycentral.jfrog.io/artifactory/docker-hub/library",
+    auth=(USERNAME, PASSWORD),
+)
+#downloads artifact
+with path.open() as fd, open("tomcat.tar.gz", "wb") as out:
+    out.write(fd.read())
 
 def test_status_code_equals_200():
-    url = "https://binarycentral.jfrog.io/artifactory/docker-hub/library"
-    auth = HTTPBasicAuth(username,apiKey)
-    response = requests.get(url,headers=headers,auth=auth,verify = "",proxies = proxyDict)
+    response = requests.get(path)
     assert response.status_code == 200
 
 def test_package_download():
-    url = "https://binarycentral.jfrog.io/artifactory/docker-hub/library"
-    auth = HTTPBasicAuth(username,apiKey)
-    response = requests.get(url,headers=headers,auth=auth,verify = "",proxies = proxyDict)
+    response = requests.get(path)
+    assert 
 
-    #code that pip installs docker package
+  
     
     #code to check installed successfully
