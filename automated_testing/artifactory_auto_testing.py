@@ -7,6 +7,7 @@ USERNAME = "name"
 PASSWORD = "password"
 
 
+    
 #find user
 user = artifactory_.find_user("username")
 #creates new user
@@ -36,6 +37,6 @@ def test_package_download():
     assert 
 
     #potentially run something that searches what's installed 'list' and assert that 'artifact' is 'in' 'list'
-  
+  https://stackoverflow.com/questions/1051254/check-if-python-package-is-installed
     
     #code to check installed successfully
