@@ -35,6 +35,7 @@ def test_package_download():
     response = requests.get(path)
     assert 
 
+    #potentially run something that searches what's installed 'list' and assert that 'artifact' is 'in' 'list'
   
     
     #code to check installed successfully
