@@ -2,17 +2,14 @@ import pytest
 import requests
 from artifactory import ArtifactoryPath
 
-class 
-
-USERNAME = "Service_Account"
-PASSWORD = "password"
+class PackageTest():
+   USERNAME = "Service_Account"
+   PASSWORD = "password"
 #-cyberark generate password 
 
-path = ArtifactoryPath(
-    "https://binarycentral.jfrog.io/artifactory/docker-hub/library",
-    auth=(USERNAME, PASSWORD)
-)
+   path = ArtifactoryPath("https://binarycentral.jfrog.io/artifactory/docker-hub/library",auth=(USERNAME, PASSWORD))
 
+if __name__ == '__main__':
 
 
 #test page has a reponse
