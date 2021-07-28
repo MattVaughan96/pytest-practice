@@ -7,17 +7,6 @@ USERNAME = "name"
 PASSWORD = "password"
 
 
-    
-#find user
-user = artifactory_.find_user("username")
-#creates new user
-if user is None:
-    # User does not exist
-    user = User(
-        artifactory_, "username", "username@bankofengland.co.uk", password=generate_password()
-    )
-    user.create()
-
 path = ArtifactoryPath(
     "https://binarycentral.jfrog.io/artifactory/docker-hub/library",
     auth=(USERNAME, PASSWORD) #user.username, user.password

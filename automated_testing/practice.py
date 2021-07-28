@@ -13,3 +13,4 @@ print(count_vowels("Matt"))
 
 def test_vowel_count():
     assert count_vowels("Matt") == 1
+
