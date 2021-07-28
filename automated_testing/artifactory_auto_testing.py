@@ -2,6 +2,7 @@ import pytest
 import requests
 from artifactory import ArtifactoryPath
 
+class 
 
 USERNAME = "Service_Account"
 PASSWORD = "password"
