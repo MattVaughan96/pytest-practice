@@ -2,8 +2,8 @@ import pytest
 import requests
 import artifactory
 
-username = 
-password = 
+username = test_user
+password = Pa55w0rd
 
 path = artifactorypath(link, auth = (username, password))
 
